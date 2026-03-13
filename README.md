@@ -1,2 +1,1 @@
-# ENDE-UD04-A2
-Repositorio oficial de la asignatura de ENDE, para la tarea de gitHUB
+Repositorio para la Unidad 04 de Entornos de Desarrollo: Control de versiones con Git
