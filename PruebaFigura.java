@@ -1,5 +1,5 @@
 package figuras;
-
+// modificacion rama master, nuevo mensaje implementadi en el codigo
 import java.util.Scanner;
 import java.awt.Color;
 
