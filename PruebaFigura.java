@@ -1,5 +1,5 @@
 package figuras;
-// commit prueba de la rama develop 
+// commit prueba de la rama develop introduciendo el proyecto en github 
 import java.util.Scanner;
 import java.awt.Color;
 
