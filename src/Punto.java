@@ -28,7 +28,7 @@ public class Punto {
     }
     /**
      * Constructor de copia
-     * @param p
+     * @param p punto a copiar
     */
     public Punto(Punto p) {
         x = p.x;
@@ -72,8 +72,8 @@ public class Punto {
     }
     /**
      * Compara este punto con otro para determinar si son iguales
-     * @param p
-     * @return
+     * @param p punto con el que se compara
+     * @return true si los puntos son iguales, false en caso contrario
      */
     public boolean compara(Punto p) {
         return p.x == x && p.y == y;

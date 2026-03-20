@@ -1,12 +1,16 @@
 package figuras;
-/**
-* Programa de prueba para las clases de figuras geométricas.
-** @author Aitor Chicano
-*@version 1.0
-*/
 import java.util.Scanner;
 import java.awt.Color;
-
+/**
+ * Clase de prueba para crear figuras geométricas (triángulo, rectángulo y cuadrado) y calcular su perímetro y área.
+ * Muestra un menú para seleccionar el tipo de figura, solicita las coordenadas del centro y las dimensiones necesarias, y luego muestra el perímetro y el área de la figura creada.
+ * @author Aitor Chicano    
+ * @version 1.0
+ * @see Figura abstracta que define las propiedades y métodos comunes de las figuras geométricas
+ * @see Triangulo clase que representa un triángulo, subclase de Figura
+ * @see Rectangulo clase que representa un rectángulo, subclase de Figura
+ * @see Cuadrado  clase que representa un cuadrado, subclase de Rectángulo
+ */
 public class PruebaFigura {
     private static int opcion;
     private static Scanner teclado = new Scanner(System.in);
@@ -17,7 +21,7 @@ public class PruebaFigura {
     /**
      * Método principal que muestra un menú para seleccionar el tipo de figura, solicita las coordenadas del centro 
      * y las dimensiones necesarias, y luego muestra el perímetro y el área de la figura creada.
-     * @param args
+     * @param args argumentos de la línea de comandos (no se utilizan)
      */
     public static void main(String[] args) {
         do {
@@ -46,8 +50,8 @@ public class PruebaFigura {
     /**
      * Solicita los lados del triángulo al usuario, crea un objeto Triangulo con las coordenadas y el color rojo,
      * y luego imprime el perímetro y el área del triángulo.    
-     * @param x
-     * @param y
+     * @param x coordenada x del centro del triángulo
+     * @param y coordenada y del centro del triángulo
      */
     private static void procesarTriangulo(double x, double y) {
         System.out.print("Introduzca el lado 1 del triangulo: ");
@@ -62,8 +66,8 @@ public class PruebaFigura {
     /**
      * Solicita la base y la altura del rectángulo al usuario, crea un objeto Rectangulo con las coordenadas y el color rojo,
      * y luego imprime el perímetro y el área del rectángulo.
-     * @param x
-     * @param y
+     * @param x coordenada x del centro del rectángulo
+     * @param y coordenada y del centro del rectángulo
      */
     private static void procesarRectangulo(double x, double y) {
         System.out.print("Introduzca la base del rectangulo: ");
@@ -76,8 +80,8 @@ public class PruebaFigura {
     /**
      * Solicita el lado del cuadrado al usuario, crea un objeto Cuadrado con las coordenadas y el color rojo,
      * y luego imprime el perímetro y el área del cuadrado.
-     * @param x
-     * @param y
+     * @param x coordenada x del centro del cuadrado
+     * @param y coordenada y del centro del cuadrado
      */
     private static void procesarCuadrado(double x, double y) {
         System.out.print("Introduzca el lado del cuadrado: ");
@@ -87,7 +91,7 @@ public class PruebaFigura {
     }
     /**
      * Imprime el perímetro y el área de la figura dada.
-     * @param f
+     * @param f figura de la cual se imprimirán el perímetro y el área     
      */
     private static void imprimirResultados(Figura f) {
         System.out.println(MSG_PERIMETRO + f.perimetro());

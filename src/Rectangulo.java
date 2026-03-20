@@ -13,11 +13,11 @@ public class Rectangulo extends Figura {
     private double altura;
     /**
      * Constructor del rectángulo con centro en (x, y), color, base y altura especificados      
-     * @param x
-     * @param y
-     * @param color
-     * @param base
-     * @param altura
+     * @param x coordenada x del centro del rectángulo
+     * @param y coordenada y del centro del rectángulo
+     * @param color color del rectángulo
+     * @param base base del rectángulo
+     * @param altura altura del rectángulo
      */
     public Rectangulo(double x, double y, Color color, double base, double altura) {
         super(x, y, color);

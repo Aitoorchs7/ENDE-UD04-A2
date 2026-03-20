@@ -1,44 +1,46 @@
 package figuras;
+import java.awt.Color;
 /**
- * Clase abstracta que representa una figura geométrica.
+ * Clase que representa un punto en el plano cartesiano.
  * @author Aitor Chicano
  * @version 1.0
  */
-import java.awt.Color;
-
 public abstract class Figura {
     private Punto centro;
     private Color color;
     /**
      * Constructor de la figura con centro en (x, y) y color especificado
-     * @param x
-     * @param y
-     * @param color
+     * @param x coordenada x del centro de la figura 
+     * @param y coordenada y del centro de la figura
+     * @param color color de la figura
      */
     public Figura(double x, double y, Color color) {
         centro = new Punto(x, y);
         this.color = color;
     }
     /**
+     * Constructor de la figura con centro en (0, 0)
      * @return coordenada x del centro de la figura
      */
     public double getXCentro() { return centro.getX(); }
     /**
+     * Obtiene la coordenada y del centro de la figura
      * @return coordenada y del centro de la figura
      */
     public double getYCentro() { return centro.getY(); }
     /**
+     * Obtiene el color de la figura
      * @return color de la figura
      */
     public Color getColor() { return color; }
     /**
      * Modifica la coordenada x del centro de la figura 
-     * @param x
+     * @param x nueva coordenada x del centro de la figura
      */
     public void setXCentro(double x) { centro.setX(x); }
     /**
      * Modifica la coordenada y del centro de la figura
-     * @param y
+     * @param y nueva coordenada y del centro de la figura
      */
     public void setYCentro(double y) { centro.setY(y); }
     /**
@@ -48,13 +50,13 @@ public abstract class Figura {
     public void setColor(Color color) { this.color = color; }
     /**
      * Calcula el perímetro de la figura
-     * @return
+     * @return perímetro de la figura
      */
 
     public abstract double perimetro();
     /**
      * Calcula el área de la figura
-     * @return
+     * @return área de la figura
      */
     public abstract double area();
     /**

@@ -14,12 +14,12 @@ public class Triangulo extends Figura {
     private double lado3;
     /**
      * Constructor del triángulo con centro en (x, y), color y lados especificados
-     * @param x
-     * @param y
-     * @param color
-     * @param lado1
-     * @param lado2
-     * @param lado3
+     * @param x coordenada x del centro del triángulo
+     * @param y coordenada y del centro del triángulo
+     * @param color color del triángulo      
+     * @param lado1 longitud del primer lado
+     * @param lado2 longitud del segundo lado
+     * @param lado3 longitud del tercer lado
      */
     public Triangulo(double x, double y, Color color, double lado1, double lado2, double lado3) {
         super(x, y, color);

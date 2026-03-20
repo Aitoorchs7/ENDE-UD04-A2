@@ -6,13 +6,7 @@ package figuras;
 *@version 1.0
 */
 import java.awt.Color;
-/**
- * Constructor del cuadrado con centro en (x, y), color y lado especificados
- * @param x
- * @param y
- * @param color
- * @param lado
- */
+
 public class Cuadrado extends Rectangulo {
     public Cuadrado(double x, double y, Color color, double lado) {
         super(x, y, color, lado, lado);
